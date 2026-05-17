@@ -1,0 +1,29 @@
+.omc/
+.RUD/
+
+# rotation pipeline artifacts (dump tensors, computed rotation .pt, eval logs).
+# Per-model: track only the .sh / .py source under rotation/<model>/; exclude
+# every kind of generated calibration / eval / investigation byproduct.
+rotation/*/GPQA/
+rotation/*/LCB/
+rotation/*/MATH/
+rotation/*/MMLU/
+rotation/*/Hadamard/
+rotation/*/qkv_dumps*/
+rotation/*/rotations*/
+rotation/*/_eval_*/
+rotation/*/investigation/
+
+# MiniMax-M2.7 is internal-only for now (per-investigation work-in-progress).
+rotation/MiniMax-M2.7/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
