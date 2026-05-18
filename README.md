@@ -205,7 +205,6 @@ The eval driver `eval_oscar_gpqa.sh` and `eval_oscar_lcb.sh` set everything for 
 
 ```bash
 SGLANG_ENABLE_MIXED_KV_WINDOWS=1 \
-SGLANG_OSCAR_ROTATION_MODE=oscar \
 SGLANG_OSCAR_K_ROTATION_PATH=.../k_rotation_qqt_r_h_pbr.pt \
 SGLANG_OSCAR_V_ROTATION_PATH=.../v_rotation_sst_r_h_pbr.pt \
 SGLANG_OSCAR_K_CLIP_RATIO=0.96 \
