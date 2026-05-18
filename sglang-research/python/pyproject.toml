@@ -26,7 +26,6 @@ dependencies = [
   "decord2 ; sys_platform == 'linux' and (platform_machine == 'aarch64' or platform_machine == 'arm64' or platform_machine == 'armv7l')",
   "datasets",
   "einops",
-  "fast-hadamard-transform",
   "fastapi",
   "flashinfer_python==0.6.7.post3", # keep it aligned with jit-cache version in Dockerfile
   "flashinfer_cubin==0.6.7.post3",
@@ -92,7 +91,6 @@ url = "https://download.pytorch.org/whl/cu129"
 explicit = true
 
 [tool.uv.sources]
-fast-hadamard-transform = { git = "https://github.com/Dao-AILab/fast-hadamard-transform" }
 torch = [
   { index = "pypi", marker = "platform_machine == 'x86_64'"},
   { index = "torch-cu129", marker = "platform_machine == 'aarch64'"},
@@ -165,12 +163,8 @@ all = [
 ]
 
 [tool.uv.extra-build-dependencies]
-fast-hadamard-transform = ["torch==2.9.1", "setuptools", "packaging", "ninja", "wheel"]
 st-attn = ["torch", "setuptools"]
 vsa = ["torch", "setuptools"]
-
-[tool.uv.extra-build-variables]
-fast-hadamard-transform = { FAST_HADAMARD_TRANSFORM_FORCE_BUILD = "TRUE" }
 
 [project.urls]
 "Homepage" = "https://github.com/sgl-project/sglang"
