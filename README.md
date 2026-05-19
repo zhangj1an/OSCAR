@@ -215,7 +215,6 @@ SGLANG_MIXED_KV_RECENT_TOKENS=256 \
 SGLANG_MIXED_KV_HP_MAX_SPLITS=8 \
 SGLANG_MIXED_KV_HP_DTYPE=bfloat16 \
 SGLANG_MIXED_KV_SCALE_DTYPE=float32 \
-HADAMARD_ORDER=128 \
 python -m sglang.launch_server \
   --model-path <model> \
   --tensor-parallel-size <tp> \
@@ -223,8 +222,6 @@ python -m sglang.launch_server \
   --kv-cache-quant-group-size 128 \
   --prefill-attention-backend fa3 \
   --decode-attention-backend triton \
-  --disable-radix-cache \
-  --disable-custom-all-reduce \
   --trust-remote-code
 ```
 

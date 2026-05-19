@@ -9,7 +9,6 @@ export ROT_DIR="${ROT_DIR:-${SCRIPT_DIR}/rotations}"
 export RUN_DIR="${RUN_DIR:-$(dirname "${ROT_DIR}")/_eval_gpqa_oscar}"
 export TP_SIZE="${TP_SIZE:-4}"
 export GROUP_SIZE="${GROUP_SIZE:-128}"
-export HADAMARD_ORDER="${HADAMARD_ORDER:-128}"  # 128 to match 8B/32B
 export K_CLIP="${K_CLIP:-0.96}"
 export V_CLIP="${V_CLIP:-0.92}"
 export NAME="${NAME:-gpqa_oscar_qwen3_4b_thinking}"

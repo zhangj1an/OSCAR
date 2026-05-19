@@ -89,14 +89,12 @@ SERVER_ARGS=(
     --kv-cache-quant-group-size "${GROUP_SIZE}"
     --mem-fraction-static "${MEM_FRAC}"
     --max-running-requests "${MAX_RUNNING}"
-    --disable-radix-cache
     --enable-cache-report
     --cuda-graph-max-bs "${CUDA_GRAPH_MAX_BS}"
     --host 127.0.0.1
     --port "${PORT}"
     --dist-init-addr "127.0.0.1:${DIST_PORT}"
     --trust-remote-code
-    --disable-custom-all-reduce
 )
 if [[ -n "${REASONING_PARSER:-}" ]]; then
     SERVER_ARGS+=(--reasoning-parser "${REASONING_PARSER}")
@@ -115,7 +113,6 @@ SGLANG_OSCAR_K_ROTATION_PATH="${ROT_DIR}/${K_ROT_FILENAME:-k_rotation_qqt_r_h_pb
 SGLANG_OSCAR_V_ROTATION_PATH="${ROT_DIR}/${V_ROT_FILENAME:-v_rotation_sst_r_h_pbr.pt}" \
 SGLANG_OSCAR_K_CLIP_RATIO="${K_CLIP:-0.96}" \
 SGLANG_OSCAR_V_CLIP_RATIO="${V_CLIP:-0.92}" \
-HADAMARD_ORDER="${HADAMARD_ORDER:-64}" \
 CUDA_VISIBLE_DEVICES="${GPUS}" \
 python -m sglang.launch_server "${SERVER_ARGS[@]}" >> "${LOG_SERVER}" 2>&1 &
 SERVER_PID=$!
