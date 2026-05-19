@@ -7,8 +7,8 @@
 ### Offline Spectral Covariance-Aware Rotation for 2-bit KV Cache Quantization
 
 <p align="center">
-  <a href="materials/main.pdf">
-    <img src="https://img.shields.io/badge/Paper-PDF-d62728?logo=adobeacrobatreader&logoColor=white" alt="Paper"/>
+  <a href="https://arxiv.org/pdf/2605.17757">
+    <img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white" alt="Paper"/>
   </a>
   &nbsp;
   <a href="https://oscar-quantize.github.io/">
