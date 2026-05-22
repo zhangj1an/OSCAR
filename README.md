@@ -32,7 +32,7 @@ scripts end to end. It works out of the box, and we also provide a rotation zoo
 so users can download calibrated rotations directly instead of recomputing them.
 
 ## 🔥 Latest News
-- **[Upcoming]** OSCAR is testing minimax-m2.7 and GLM in long horizon Agentic Tasks.  Happy to see OSCAR being used in the wild!
+- **[Upcoming]** OSCAR is testing minimax-m2.7 and GLM in 200K long horizon Agentic Tasks.  Happy to see OSCAR being used in the wild!
 - **[2026-05-18]** Full release: [paper](https://arxiv.org/pdf/2605.17757), code, [website](https://oscar-quantize.github.io/), and [RotationZoo](https://huggingface.co/Zhongzhu/OSCAR-RotationZoo) are all live — runs out of the box on SGLang.
 
 ## 📖 Table of Contents
