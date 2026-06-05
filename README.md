@@ -32,7 +32,12 @@ scripts end to end. It works out of the box, and we also provide a rotation zoo
 so users can download calibrated rotations directly instead of recomputing them.
 
 ## 🔥 Latest News
-- **[Upcoming]** OSCAR is testing minimax-m2.7 and GLM in 200K long horizon agentic tasks. Happy to see OSCAR used in the wild!
+- **[Upcoming]** OSCAR is testing minimax-m2.7, GLM-5.1 and more models in 200K long horizon agentic tasks. Happy to see OSCAR used in the wild!
+- **[2026-06-05]** OSCAR now runs its INT2 KV cache through a fused mixed-precision Flash-Attention kernel on Apple Metal, making long-context decode up to ~15× faster (near-BF16) at ~7× less KV memory. Try to RUN QWEN-3-32B with LONG CONTEXT in your LOCAL MAC!
+  <details>
+  <summary><b>MacBook M5 Max Qwen3-32B Local Run Screenshot</b></summary>
+  <img width="1003" height="654" alt="Screenshot 2026-06-05 at 09 57 31" src="https://github.com/user-attachments/assets/8ea1ccf9-c2f0-4f3e-8232-7f0b2dbdd144" />
+  </details>
 - **[2026-05-31]** OSCAR is now runnable on the zhongzhu/llama.cpp branch of **llama.cpp**. Feedback and suggestions are very welcome!
 - **[2026-05-23]** OSCAR release the [qwen3.5 4B, 35B-A3B, minimax-m2.7 229B preview results](#main-results). You can use OSCAR for qwen3.5, minimax2.7 beta now! refer to branch zhongzhu/hybrid-model and set SGLANG_LLOYD_MAX=1.
 - **[2026-05-18]** Full release: [paper](https://arxiv.org/pdf/2605.17757), code, [website](https://oscar-quantize.github.io/), and [RotationZoo](https://huggingface.co/Zhongzhu/OSCAR-RotationZoo) are all live — runs out of the box on SGLang.
