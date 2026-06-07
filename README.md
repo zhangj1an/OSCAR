@@ -34,9 +34,6 @@ so users can download calibrated rotations directly instead of recomputing them.
 ## 🔥 Latest News
 - **[Upcoming]** OSCAR is testing minimax-m2.7, GLM-5.1, Qwen3.7 and more models in long horizon agentic tasks (1M+ token context). Happy to se·e OSCAR used in the wild!
 - **[2026-06-07]** OSCAR INT2 KV cache now runs **Gemma 4 12B** (head dim 512, incl. sliding-window layers) and **Qwen3** on the `zhongzhu/llamacpp` llama.cpp fork — **~8× smaller KV at near-f16 quality**, with [pre-built `*-rot-kv.gguf` on Hugging Face](https://huggingface.co/Zhongzhu/OSCAR-LLAMACPP-Gemma-4-12B-it-INT2-KV). RUN GEMMA 4 / QWEN3 with LONG CONTEXT on your LOCAL MAC!
-  <details>
-  <summary><b>Gemma 4 12B & Qwen3 — OSCAR INT2 KV on llama.cpp (Local Run Screenshot)</b></summary>
-  </details>
 - **[2026-06-05]** OSCAR now runs its INT2 KV cache through a fused mixed-precision Flash-Attention kernel on Apple Metal, making long-context decode up to ~15× faster (near-BF16) at ~7× less KV memory. Try to RUN QWEN-3-32B with LONG CONTEXT in your LOCAL MAC!
   <details>
   <summary><b>MacBook M5 Max Qwen3-32B Local Run Screenshot</b></summary>
